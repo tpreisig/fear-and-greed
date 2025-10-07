@@ -1,7 +1,7 @@
 import reflex as rx
 
 config = rx.Config(
-    app_name="fear_and_greed",
+    app_name="fg_index2",
     plugins=[
         rx.plugins.SitemapPlugin(),
         rx.plugins.TailwindV4Plugin(),
