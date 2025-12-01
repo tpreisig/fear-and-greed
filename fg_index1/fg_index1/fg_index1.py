@@ -50,9 +50,9 @@ def index_page() -> rx.Component:
                 rx.text(State.error, color="red"),
                 rx.vstack(
                     rx.text(f"Value: {State.data.get('value', 'N/A')}/100"),
-                    rx.text(f" ➡️ Classification: {State.data.get('value_classification', 'N/A')}", color=rx.color_mode_cond(dark="aqua", light="deeppink")),
-                    rx.text(f"Timestamp: {State.data.get('timestamp', 'N/A')}"),
-                    spacing="2",
+                    rx.text(f"⏱️ Timestamp {State.data.get('timestamp', 'N/A')}"),
+                    rx.text(f"Classification {State.data.get('value_classification', 'N/A')}", color=rx.color_mode_cond(dark="aqua", light="deeppink"), font_weight="bold"),
+                    spacing="3",
                     padding="1em",
                     border="1px solid slateblue",
                     border_radius="8px",
